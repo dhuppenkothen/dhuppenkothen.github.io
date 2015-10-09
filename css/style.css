@@ -641,9 +641,11 @@
 		}
 
 			.dark a {
-				color: #39454b;
+				color: #ee55aa;
 			}
-
+                        .dark a:visited {
+                                color: #ee88ff;
+                        }
 			.dark .button.style2 {
 				border-color: inherit;
 				background-color: rgba(64,64,64,0.05);
@@ -890,6 +892,31 @@
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
+
+
+
+/*********************************************************************************/
+/* Three                                                                         */
+/*********************************************************************************/
+
+        #three {
+                background: url('images/overlay.png'), url('../images/centralpark.jpg');
+                background-size: 256px 256px, cover;
+                background-attachment: fixed, fixed;
+                background-position: top left, center center;
+        }
+
+/*********************************************************************************/
+/* Four                                                                          */
+/*********************************************************************************/
+
+        #four {
+                background: url('images/overlay.png'), url('../images/berries1.jpg');
+                background-size: 256px 256px, cover;
+                background-attachment: fixed, fixed;
+                background-position: top left, center center;
+        }
+
 
 /*********************************************************************************/
 /* Work                                                                          */
