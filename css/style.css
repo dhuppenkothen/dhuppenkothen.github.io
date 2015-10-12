@@ -487,7 +487,9 @@
 			background: #DEF8FA;
 			color: #39454b;
 			padding: 2em;
-		}
+                        overflow: scroll;
+	                height: 80%;
+                      }
 
 			.box.style2 {
 				padding: 3.5em 2.5em 3.5em 2.5em;
