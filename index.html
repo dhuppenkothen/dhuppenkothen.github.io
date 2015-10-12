@@ -39,7 +39,9 @@
 						<ul>
 							<li><a href="#intro">Intro</a></li>
 							<li><a href="#one">Work</a></li>
-							<li><a href="#two">CV</a></li>
+							<li><a href="#two">Research</a></li>
+                                                        <li><a href="#three">Publications</a></li>
+                                                        <li><a href="#four">CV</a></li>
 							<li><a href="#work">Not Work</a></li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
@@ -52,11 +54,16 @@
 				<div class="content container 75%">
 					<header>
 						<h2>Welcome</h2>
-					</header>
-					<p>to my <strong>new and improved</strong> website, where you will find information about me and things 
-					  that I find interesting: 
-					  mainly astronomy, statistics, music and photography. I hope you'll find this useful, and please feel fre
-        				  to say hi!
+					</header> 
+					
+<p>I am a Moore-Sloan Data Science Fellow at New York University's Center for Data Science.
+Before coming to NYU, I completed a PhD thesis on <a href="#two">magnetar bursts</a> with 
+Anna Watts and Michiel van der Klis at the 
+<a href="http://www.astro.uva.nl/" target="_blank">Anton Pannekoek Institute for Astronomy</a> of the University of Amsterdam.
+Previously, I studied at the University of Amsterdam and Jacobs University Bremen, where I completed an undergraduate
+degree in Geosciences and Astrophysics. </br>
+Please feel free to look around my website and say hi! 
+</p>
 					<footer>
 						<a href="#one" class="button style2 down">More</a>
 					</footer>
@@ -66,68 +73,98 @@
 		<!-- One -->
 			<section id="one" class="main style2 right dark fullscreen">
 				<div class="content box style2">
-					<header>
-						<h2>Astronomy and Data Science</h2>
+					<header> 
+						<h2>(X-ray) Astronomy and Data Science</h2>
 					</header>
-					<p> 
+					<p id="one_partone"> 
 
-I am a Moore-Sloan Data Science Postdoctoral Fellow at the NYU <a href="http://cds.nyu.edu/">Center for Data Science</a>.
 
-Previously, I've been a PhD student at the <a href="http://www.astro.uva.nl/">Anton Pannekoek Institute for Astronomy</a> at the University of Amsterdam, where I did my PhD thesis on magnetars with Anna Watts and Michiel van der Klis.
 
-I'm particularly interested in astrostatistics, i.e. the application of statistical methods in astronomy. I specialize in all those problems in time series analysis, where traditional (Fourier) methods come crashing down.
+At the moment, I am particularly interested in the application of statistical methods and machine learning in astronomy, 
+especially in time series data taken with X-ray and gamma-ray satellites. At these wavelengths, one can look at some of the most energetic
+and violent events in the universe:
+black holes accreting gas from an orbiting star, highly magnetized neutron stars undergo 
+catastrophic outbursts of energy that shake the whole star, and massive stellar explosions that are the brightest events 
+in the universe. 
+There is one thing all these phenomena have in common: they are transient, that is, their brightness varies 
+with time, sometimes by a factor of a hundred or a thousand. Studying in detail how they vary with time can help us understand 
+the physical processes that produced the variability in the first place.
 
-I'm also interested in machine learning applied to problems in (X-ray) astronomy.
-
- 
-
+ My interest is in developing and applying methods for 
+this purpose to help us get the most information out of the data we gather. 
 				</p>
 				</div>
-				<a href="#two" class="button style2 down anchored">Next</a>
+				<a href="#two" class="button style2 down anchored">More</a>
 			</section>
 
 
                 <!-- Magnetars -->
-                        <section id="intro" class="main style1 dark fullscreen">
-                                <div class="content container 75%">
+                        <section id="two" class="main style2 left dark fullscreen">
+                                <div class="content box style2">
                                         <header>
-                                                <h2>Magnetars</h2>
+                                                <h2>Magnetar Research</h2>
                                         </header>
                                         
 <p>
-Stuff about magnetars.
+For my PhD thesis, the main focus of my research rested on magnetars. These are neutron stars--the ultra-dense remnants of 
+some types of stellar explosion (supernova)--that have exceptionally strong magnetic fields: about fourteen orders of magnitude 
+stronger than that of the Earth! Neutron stars are one of the prime target for studying nuclear physics at densities and pressures 
+that we cannot produce on Earth. Similarly, because their magnetic fields are far stronger than anything reproducible in a laboratory, 
+we can use them to study unique quantum field effects only believed to be in effect in fields this strong. </p>
+
+<p>
+In practice, I studied bursts and flares from magnetars. Once in a while, we see bright blips of hard X-ray light that only last 
+for a fraction of a second. Over the years, we have gathered thousands of such blips (called recurrent bursts) from several of 
+these magnetars. Very, very rarely, they also show extremely bright outbursts in X-rays called giant flares. These are so bright 
+that they can swamp our X-ray telescopes with light, and the gamma-ray photons of one of them even caused a measurable depression 
+in Earth's magnetic field! These giant flares are a treasure trove for studying neutron stars and dense matter physics, because 
+during the course of a flare, we have seen the brightness vary in periodic patterns. These patterns are so telling that we believe 
+they've been caused by star quakes: effectively, the entire solid crust (neutron stars have solid crystal crusts, unlike normal 
+stars) twists and shakes, something we can measure in the light that we see. In the same way that geoscientists study the earth's 
+interior by measuring the waves travelling through it during an earthquake, we hope to be able to study the interior of neutron 
+stars by studying the waves during a star quake. </p>
+
+<p>While we have measured these waves in giant flares, these flares are rare, 
+so data is scarce. My main task during my PhD was to search for these waves in the much shorter recurrent bursts. This task 
+is technically challenging, because the methods we have for finding them were not designed for that particular task. Here is 
+a simple comparison: imagine standing at a still pond. When you throw in a stone, you will see the ripples the stone created 
+in the surface. Now imagine standing at the bow of a ship during a storm, performing the same experiment. 
+The sea will be churning, there will be large waves and peaks and troughs, and that will make seeing the ripples created 
+by the stone much more difficult. Our methods were designed largely for situations analogous to the still pond. The magnetar 
+bursts I am studying, however, are more like a stormy sea! Most of my PhD research was dedicated to making our methods work 
+(or, in my case, use a new method!) in the latter case, which can not only be applied to magnetars, but to other bright bursts 
+as well (for example gamma-ray bursts or solar flares). We did find waves in the shorter bursts in the end, which gives us 
+more data points to constrain theoretical models. Besides, we are still working to make those methods better, and we have 
+not finished the search yet, so there may be more to come in the future!
 </p>
+</div>
 
-
-					<footer>
-                                                <a href="#one" class="button style2 down">More</a>
-                                        </footer>
+                                    <a href="#three" class="button style2 down anchored">Next</a>
                                 </div>
                         </section>
 
                 <!-- Black Holes 'n Stuff -->
-                        <section id="one" class="main style2 right dark fullscreen">
+                        <section id="three" class="main style2 right dark fullscreen">
                                 <div class="content box style2">
                                         <header>
-                                                <h2>X-ray Binaries</h2>
+                                                <h2>Publications</h2>
                                         </header>
                                         <p>
-
-Stuff about black holes.
+Things I write.
                                 </p>
                                 </div>
-                                <a href="#two" class="button style2 down anchored">Next</a>
+                                <a href="#four" class="button style2 down anchored">Next</a>
                         </section>
 
 
 
 		<!-- Two -->
-			<section id="two" class="main style2 left dark fullscreen">
+			<section id="four" class="main style2 left dark fullscreen">
 				<div class="content box style2">
 					<header>
 						<h2>CV</h2>
 					</header>
-					<p> You can find my CV <a href="dhuppenkothen_cv.pdf">here</a>. My thesis is available from the University of Amsterdam <a href="http://www.astro.uva.nl/static/research/theses/phd/d-huppenkothen.pdf">here</a>.
+					<p> You can find my CV <a href="dhuppenkothen_cv_august2015.pdf">here</a>. My thesis is available from the University of Amsterdam <a href="http://www.astro.uva.nl/static/research/theses/phd/d-huppenkothen.pdf">here</a>.
 				</div>
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
@@ -167,7 +204,13 @@ Stuff about black holes.
 				<div class="content container">
 					<header>
 						<h2>Say Hello.</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+<p>
+You can send me an e-mail at <b>daniela[dot]huppenkothen[at]nyu.edu</b>, or snail mail at </br> 
+Daniela Huppenkothen </br> 
+Center for Data Science, New York University </br>
+726 Broadway, 7th Floor </br>
+New York, NY 10003
+</p>
 					</header>
 					<div class="box container 75%">
 
@@ -198,9 +241,9 @@ Stuff about black holes.
 
 				<!-- Icons -->
 					<ul class="actions">
-						<li><a href="http://twitter.com/Tiana_Athriel" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="http://github.com/dhuppenkothen" class="icon fa-github">GitHub</a></li>
-						<li><a href="http://plus.google.com/110598939388550356951/about/p/pub" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="http://twitter.com/Tiana_Athriel" class="icon fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+						<li><a href="http://github.com/dhuppenkothen" class="icon fa-github" target="_blank">GitHub</a></li>
+						<li><a href="http://plus.google.com/110598939388550356951/about/p/pub" class="icon fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
 					</ul>
 
 				<!-- Menu -->
