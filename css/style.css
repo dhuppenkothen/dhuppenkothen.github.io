@@ -866,7 +866,7 @@
 /*********************************************************************************/
 
 	#intro {
-		background: url('images/overlay.png'), url('../images/DSC_0677.JPG'), rgba(255, 255, 255, 0.5);;
+		background: url('images/overlay.png'), url('../images/central_park2.jpg'), rgba(255, 255, 255, 0.5);;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -875,7 +875,7 @@
 
 	#intro_bg p {
 		padding: 40px;
-		background: rgba(222, 248, 250, 0.7);
+		background: rgba(244, 244, 244, 0.7);
  		color: rgba(57, 69, 75, 1.0);
 		} 
 
@@ -966,7 +966,7 @@
 /*********************************************************************************/
 
 	#work {
-		background: url('images/overlay.png'), url('../images/banner.jpg');
+		background: url('images/overlay.png'), url('../images/nyc_panorama2.jpg');
                 background-size: 256px 256px, cover;
                 background-attachment: fixed, fixed;
                 background-position: top left, center center;
