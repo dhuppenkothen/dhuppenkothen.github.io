@@ -866,12 +866,18 @@
 /*********************************************************************************/
 
 	#intro {
-		background: url('images/overlay.png'), url('../images/berries2.jpg');
+		background: url('images/overlay.png'), url('../images/DSC_0677.JPG'), rgba(255, 255, 255, 0.5);;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
 	}
+
+	#intro_bg p {
+		padding: 40px;
+		background: rgba(222, 248, 250, 0.7);
+ 		color: rgba(57, 69, 75, 1.0);
+		} 
 
 /*********************************************************************************/
 /* One                                                                           */
@@ -920,7 +926,7 @@
         }
 
 /*********************************************************************************/
-/* Links                                                                          */
+/* Links                                                                         */
 /*********************************************************************************/
 
         #links {
@@ -932,7 +938,7 @@
 
 
 /*********************************************************************************/
-/* Links                                                                          */
+/* Code                                                                          */
 /*********************************************************************************/
 
         #code {
@@ -940,6 +946,18 @@
                 background-size: 256px 256px, cover;
                 background-attachment: fixed, fixed;
                 background-position: top left, center center;
+        }
+
+/*********************************************************************************/
+/* Contact                                                                       */
+/*********************************************************************************/
+
+        #contact {
+                background: url('images/overlay.png'), url('../images/berries2.jpg');
+                background-size: 256px 256px, cover;
+                background-attachment: fixed, fixed;
+                background-position: top left, bottom center;
+                background-repeat: repeat, no-repeat;
         }
 
 
