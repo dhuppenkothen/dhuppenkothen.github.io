@@ -71,7 +71,7 @@
 	}
 
 	a {
-		color: #98c593;
+		color: #2d68c6;
 
 		-moz-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: all 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -510,12 +510,14 @@
 			.main.style1 {
 				text-align: center;
 				padding: 3em 0 3em 0;
+				opacity: 1.0;
 			}
 
 				.main.style1 h2 {
 					font-size: 4.25em;
 					line-height: 1em;
 					letter-spacing: -4px;
+					opacity: 0.8;
 				}
 
 				.main.style1:before {
@@ -529,7 +531,6 @@
 					opacity: 1.0;
 					display: inline-block;
 					vertical-align: middle;
-
 					-moz-transition: all 1s ease;
 					-webkit-transition: all 1s ease;
 					-o-transition: all 1s ease;
@@ -643,10 +644,10 @@
 		}
 
 			.dark a {
-				color: #ee55aa;
+				color: #2d68c6;
 			}
                         .dark a:visited {
-                                color: #ee88ff;
+                                color: #652c93;
                         }
 			.dark .button.style2 {
 				border-color: inherit;
@@ -875,7 +876,7 @@
 
 	#intro_bg p {
 		padding: 40px;
-		background: rgba(222, 248, 250, 0.7);
+		background: rgba(222, 248, 250, 0.85);
  		color: rgba(57, 69, 75, 1.0);
 		} 
 
